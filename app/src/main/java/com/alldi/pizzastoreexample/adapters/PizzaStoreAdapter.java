@@ -2,6 +2,7 @@ package com.alldi.pizzastoreexample.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.alldi.pizzastoreexample.MainActivity;
 import com.alldi.pizzastoreexample.PizzaMenuDetailActivity;
 import com.alldi.pizzastoreexample.R;
 import com.alldi.pizzastoreexample.datas.PizzaStore;
@@ -50,12 +52,11 @@ public class PizzaStoreAdapter extends ArrayAdapter<PizzaStore> {
         TextView openTimeTxt = row.findViewById(R.id.openTimeTxt);
         CircleImageView storeImgView = row.findViewById(R.id.storeImgView);
 
+
         storeNameTxt.setText(pizzaStoreData.storeName);
         openTimeTxt.setText(pizzaStoreData.openTime);
+
         Glide.with(mContext).load(pizzaStoreData.imgUri).into(storeImgView);
-
-
-
 
 
         return row;
