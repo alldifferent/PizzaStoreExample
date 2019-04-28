@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Menu">
+
+        <item >포테이토 피자</item>
+        <item >불고기 피자</item>
+        <item >컴비네이션 피자</item>
+        <item >고구마 피자</item>
+
+    </string-array>
+
+
+
+
+</resources>
